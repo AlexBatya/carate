@@ -1,0 +1,243 @@
+$maxWidth: 1200;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p, body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    // background: rgba(45, 41, 38, 0.9);;
+    background: rgba(45, 41, 38, 0.9);
+    overflow-x: hidden;
+}
+
+main{
+    .baner{
+        padding: 80px 0 0 0; 
+        overflow: hidden;
+        width: 100vw;
+        height: 80vh;
+        .arrow{
+            color: white;
+            bottom: 0;
+        }
+        .baner__pagination{
+            bottom: 100px;
+            .swiper-pagination-bullet{
+                background-color: white;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .baner__wrapper{
+            width: 100%;
+            height: 100%;
+            .baner__item{
+                position: relative;
+                overflow: hidden;
+                max-width: 100%;
+                height: 100%;
+                .shell{
+                    z-index: 5;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        font-family: 'Exo 2', sans-serif;
+                        // font-size: 150px;
+                        @include adaptiv-font(140, 32);
+                        color: white;
+                    }
+                }
+                .baner__logo{
+                    position: absolute;
+                    z-index: 4;
+                    height: 70%;
+                    bottom: 0;
+                    left: 0;
+                }
+                .baner__img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }   
+    }
+}
+
+.btm{
+    cursor: pointer;
+    display: block;
+
+    border: none;
+    background-color: #FE0;
+    padding: 17px 29px;
+
+    color: #2D2926;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.about{
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: hidden;
+    .rubashka{
+        position: absolute;
+        bottom: 00px;
+        left: 500px;
+        z-index: -1;
+    }
+    .text{
+        margin: 56px 0 0 0;
+        h2{
+            color: white;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        p{
+            max-width: 509px;
+            margin: 33px 0 55px 0;
+            color: white;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        button{
+            margin: 20px 0 0 0;
+        }
+    }
+    .image{
+        margin: 56px 0 0 0;
+        img{
+            max-width: 430px;
+            max-height: 430px;
+        }
+        @media(max-width: 700px){
+            display: none;
+        }
+    }
+}
+
+
+.ourMasters{
+    margin: 83px 0 0 0;
+    padding: 37px 10px 56px 10px;
+    background-color: #2D2926;
+    .ourMasters__body__container{
+        h2{
+            color: white;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .masters{
+            // position: relative;
+            margin: 34px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            .master{
+                position: relative;
+                height: 500px;
+                height: 100%;
+                img{
+                    object-fit: cover;
+                    object-position: top;
+                    width: 279px;
+                    height: 398px;
+                }
+                .table{
+                    position: relative;
+                    bottom: 50px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    color: #000;
+                    background-color: white;
+                    width: 70%;
+                    padding: 16px 27px 26px 27px;
+                    text-align: center;
+
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .belt{
+                    position: relative;
+                    bottom: 80px;
+                    background: url('../img/belt.png') top / cover no-repeat; 
+                    height: 102px;
+                    width: 279px;
+                    span{
+                        transform: rotate(-32deg);
+                        position: absolute;
+                        top: 64px;
+                        left: 45px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+.cost{
+    padding: 94px 10px 53px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    p{
+        max-width: 560px;
+
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    } 
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media(max-width: 800px){
+        img{
+            display: none;
+        }
+    }
+}
+

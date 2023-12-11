@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/popups.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src = './assets/js/wow.min.js'></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <title>main</title>
+</head>
+<body>
+
+    <div class='menu'>
+        <div class='menu__shell animate__animated'></div>
+        <div class='menu__body animate__animated'>
+                
+            <article class='menu__body__container'>
+                <div class="menu__body__container__close">X</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Тренеры</a></li>
+                        <li><a href="#">О карате</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav> 
+                <button class = 'btm'>Записаться на занятие</button>
+            </article>
+        </div>
+    </div>
+
+    <header class = "">
+        <div class="header__body animate__animated animate__fadeInDown">
+            <div class="header__body__container container">
+                <div class="logo">
+                    <div class="logo-img">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                    <div class="name">Kireev dojo</div>
+                </div>
+                <nav class = 'menu-mobile menu__open'>
+                    <img src="./assets/img/menu.svg" alt="">
+                </nav>
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Тренеры</a></li>
+                        <li><a href="#">О карате</a></li>
+                        <li><a href="#">Расписание</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> 
+
+    <main>
+        <div class="baner swiper-container container">
+
+            <div class="arrow baner__prev swiper-button-prev"></div>
+            <div class="arrow baner__next swiper-button-next"></div>
+
+            <div class="baner__pagination swiper-pagination"></div>
+
+            <div class="baner__wrapper swiper-wrapper">
+                <div class="baner__item swiper-slide">
+                    <img class = 'baner__logo' data-swiper-parallax-duration="1000" 
+                    data-swiper-parallax = "-700" class = 'baner__logo' src="./assets/img/logo.png" alt="">
+                    <div class="shell">
+                        <h2 
+                        data-swiper-parallax-duration="2000"
+                        data-swiper-parallax = "-1000"
+                        data-swiper-parallax-opacity = "0.5"
+                        >Бесплатное <br> пробное <br> занятие</h2>
+                    </div>
+                    <div style = "background: url('./assets/img/baner.png') center / cover no-repeat" data-swiper-parallax-x = "80%" class="baner__img"></div>
+                </div>
+                <div class="baner__item swiper-slide">
+                    <div class="shell">
+
+                    </div>
+                    <div style = "background: url('./assets/img/baner.png') center / cover no-repeat" data-swiper-parallax-x = "80%" class="baner__img"></div>
+                </div>
+                <div class="baner__item swiper-slide">
+                    <div class="shell">
+
+                    </div>
+                    <div style = "background: url('./assets/img/baner.png') center / cover no-repeat" data-swiper-parallax-x = "80%" class="baner__img"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class = 'about container'>
+            <img class = 'rubashka' src="./assets/img/rubashka.svg" alt="">
+            <div class="text animate__animated wow animate__fadeInLeft">
+                <h2>О нас</h2>
+                <p>«Kireev dojo» – детская школа каратэ Шотокан для ребят 4-17 лет. Мы делаем упор на традиционный японский подход, поэтому не учим детей только махать руками и ногами. Наш клуб – место, где формируется характер, ответственность, уважение к старшим и любовь к спорту.</p>
+                <button class = 'btm'>Узнать больше</button>
+                <button class = 'btm'>Записаться на занятие</button>
+            </div>
+            <div class="image animate__animated wow animate__fadeInRight">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+        </section>
+
+        <section class="ourMasters">
+            <div class="ourMasters__body__container container">
+                <h2>Наши мастера</h2>
+
+                <div class="masters">
+
+                    <div class="master">
+                        <img src="./assets/img/one.png" alt="">
+                        <div class="table">Киреев Дмитрий  <br> Борисович</div>
+                        <div class="belt">
+                            <!-- <img src="./assets/img/belt.png" alt=""> -->
+                            <span>5 дан</span>
+                        </div>
+                    </div>
+                    
+                    <div class="master">
+                        <img src="./assets/img/two.png" alt="">
+                        <div class="table">Киреев Евгений  <br> Дмитриевич</div>
+                        <div class="belt">
+                            <!-- <img src="./assets/img/belt.png" alt=""> -->
+                            <span>1 дан</span>
+                        </div>
+                    </div>
+
+                    <div class="master">
+                        <img src="./assets/img/coaches3.png" alt="">
+                        <div class="table">Голованова Арина <br> Александровна</div>
+                        <div class="belt">
+                            <!-- <img src="./assets/img/belt.png" alt=""> -->
+                            <span>1 дан</span>
+                        </div>
+                    </div>
+
+                    <div class="master">
+                        <img src="./assets/img/coaches4.png" alt="">
+                        <div class="table">Серебрякова Алина <br> Олеговна</div>
+                        <div class="belt">
+                            <!-- <img src="./assets/img/belt.png" alt=""> -->
+                            <span>1 кю</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class = 'btm'>Узнать больше</button>
+            </div>
+        </section>
+
+        <section class = 'cost container'>
+            <p>
+                Клуб «Kireev dojo» приглашает ребят 4-17 лет на персональные и групповые занятия.⠀
+
+                Здесь ваш ребенок с головой окунется в мир боевого искусства: познает его философию, освоит самые сложные приемы и выплеснет свои эмоции.⠀
+
+                Стоимость: 
+                Занятия в группах от 7 до 18 человек: 2 500 – 12 тренировок по 2 часа 
+                Индивидуальные занятия: 500 руб/час⠀Мы не учим громко кричать и крушить кирпичи. 
+
+                Шаг за шагом ваш ребенок отработает скорость реакций, научится правильно дышать, растягиваться и узнает другие нюансы боевого искусства.⠀
+
+                Занятия в «Kireev dojo» – еще одна причина гордиться своим ребенком
+            </p>
+            <img src="./assets/img/cost.png" alt="">
+        </section>
+
+        <!-- <section class="schedule">
+
+        </section> -->
+
+    </main>
+
+    <footer>
+        <div class="footer__body">
+            <div class="footer__body__container container">
+                <div class="logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </div>
+                <div class="lists">
+                    <h3>Страницы</h3>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Тренеры</a></li>
+                            <li><a href="#">О карате</a></li>
+                            <li><a href="#">Расписание</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="contacts">
+                    <h3>Контакты</h3>
+                    <div class="info">
+                        <div class = 'num'>+7 (924) 722-05-33</div>
+                        <div class = 'num'></div>
+                        <div class = 'mail'>alex28.12.12@mail.ru</div>
+                    </div>
+                    
+                </div>
+                <div class="adress">
+                    <h3>Адресса</h3>
+                    <div class="info">
+                        <div class="adr">г. Уссурийск <br> 
+                        ул. Чечерина, 22</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="./assets/js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./assets/js/parallax.js"></script>
+<script src="./assets/js/swiper.js"></script>
+<script src="./assets/js/popup.js"></script>
+</html>

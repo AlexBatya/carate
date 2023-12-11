@@ -1,0 +1,106 @@
+footer{
+    background-color: #2D2926;
+    padding: 40px 0 56px 0;
+    .footer__body{
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            @media(max-width: 750px){
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+                text-align: center;
+            }
+            .logo{
+                img{
+                    max-width: 250px;
+                    max-height: 250px;
+                }
+            }
+            .lists{
+                h3{
+                    margin: 0 0 26px 0; 
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                nav{
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 10px;
+                        li{
+                            list-style: none;
+                            a{
+                                text-decoration: none;
+                                color: #FFF;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                            }
+                        }
+                    }
+                }
+            }
+            .contacts{
+                h3{
+                    margin: 0 0 26px 0; 
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 5px;
+                    .num{
+                        color: #FFF;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        text-decoration-line: underline;
+                    }
+                    .mail{
+                        color: #FFF;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            .adress{
+                h3{
+                    margin: 0 0 26px 0; 
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                .info{
+                    .adr{
+                        color: #FFF;
+                        font-family: Inter;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
